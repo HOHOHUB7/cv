@@ -1,0 +1,10 @@
+
+/* Aplica a todos os elementos de texto comuns */
+body, p, span, div, a, li, h1, h2, h3, h4, h5, h6, label, input, textarea, button, td, th {
+    -webkit-text-fill-color: aliceblue !important;
+    font-family: "Roboto", sans-serif !important;
+ }
+ button,a,button > span{
+     -webkit-text-fill-color: rgb(0, 0, 0) !important;
+     font-family: "Roboto", sans-serif !important;
+ }
