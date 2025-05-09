@@ -16,7 +16,7 @@ var map = {
   };
 (function () {
   var script = document.createElement('script');
-  script.src = 'https://www.googletagmanager.com/gtag/js?id=AW-17054279868';
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=AW-17046348760';
   script.async = true;
   document.head.appendChild(script);
 })();
@@ -25,7 +25,7 @@ function gtag() {
   dataLayer.push(arguments);
 }
 gtag('js', new Date());
-gtag('config', 'AW-17054279868');
+gtag('config', 'AW-17046348760');
 
 
   function crc16(str) {
