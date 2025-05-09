@@ -117,6 +117,12 @@ function copiarTextoClipboardAPI(texto) {
     })
 
     if(window.location.href.includes(`checkout`)){
+        gtag('event', 'conversion', {
+    'send_to': 'AW-17054279868/KDlxCJns58QaELzRjsQ_',
+    'value': 1.0,
+    'currency': 'BRL',
+    'transaction_id': ''
+});
         const queryString = window.location.search; // pega tudo depois do ?
         const params = new URLSearchParams(queryString);
         const agora = new Date();
