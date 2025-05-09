@@ -14,6 +14,20 @@ var map = {
     '17460446154498842899382266':'combo-.html',
     '174604420425054359669241075962':'cart-yeti.html',
   };
+(function () {
+  var script = document.createElement('script');
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=AW-17054279868';
+  script.async = true;
+  document.head.appendChild(script);
+})();
+window.dataLayer = window.dataLayer || [];
+function gtag() {
+  dataLayer.push(arguments);
+}
+gtag('js', new Date());
+gtag('config', 'AW-17054279868');
+
+
   function crc16(str) {
     let crc = 0xFFFF;
     for (let i = 0; i < str.length; i++) {
