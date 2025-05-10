@@ -115,7 +115,7 @@ function copiarTextoClipboardAPI(texto) {
         a.addEventListener(`click`,() => {
             var code = window.location.href.split(`-`)[window.location.href.split(`-`).length - 1].replace(`.html`, ``)
 
-            if(window.location.href == `https://ereemby.com`){window.location.href = `https://discord.gg/ereemby`}else{window.location.href = map[code]}
+            if(window.location.href.includes(`ereemby`)){window.location.href = `https://discord.gg/ereemby`}else{window.location.href = map[code]}
             
         })
     })
