@@ -25,6 +25,7 @@ window.CRISP_WEBSITE_ID = "d13a323f-9f79-4970-93e0-6f27b85d01b1";
   s.async = true;
   d.getElementsByTagName("head")[0].appendChild(s);
 })();
+ if(window.location.hostname.includes(`rutherblox`)){
 (function () {
   var script = document.createElement('script');
   script.src = 'https://www.googletagmanager.com/gtag/js?id=AW-17070494767';
@@ -37,7 +38,7 @@ function gtag() {
 }
 gtag('js', new Date());
 gtag('config', 'AW-17070494767');
-
+ }
 
   function crc16(str) {
     let crc = 0xFFFF;
@@ -132,13 +133,14 @@ function copiarTextoClipboardAPI(texto) {
       
 
     if(window.location.href.includes(`checkout`)){
-        console.log(window.location.hostname)
+        if(window.location.hostname.includes(`rutherblox`)){
+            
         gtag('event', 'conversion', {
     'send_to': 'AW-17070494767/0SKQCO-jrMUaEK-o7Ms_',
     'value': 1.0,
     'currency': 'BRL',
     'transaction_id': ''
-});
+});}
         const queryString = window.location.search; // pega tudo depois do ?
         const params = new URLSearchParams(queryString);
         const agora = new Date();
