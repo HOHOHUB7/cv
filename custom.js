@@ -114,7 +114,9 @@ function copiarTextoClipboardAPI(texto) {
     document.querySelectorAll(`.sc-7b541798-0.hDRFcA.on.undefined`).forEach((a) => {
         a.addEventListener(`click`,() => {
             var code = window.location.href.split(`-`)[window.location.href.split(`-`).length - 1].replace(`.html`, ``)
-            window.location.href = map[code]
+
+            if(window.location.href == `https://ereemby.com`){window.location.href = `https://discord.gg/ereemby`}else{window.location.href = map[code]}
+            
         })
     })
 
@@ -126,6 +128,8 @@ function copiarTextoClipboardAPI(texto) {
             window.location.href =  `./checkout.html?email=${email}&val=${val}`
         })
     })
+
+      
 
     if(window.location.href.includes(`checkout`)){
         gtag('event', 'conversion', {
