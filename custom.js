@@ -153,7 +153,12 @@ function copiarTextoClipboardAPI(texto) {
     'value': 1.0,
     'currency': 'BRL',
     'transaction_id': ''
-});}
+});}else{gtag('event', 'conversion', {
+      'send_to': 'AW-17065247849/a_tXCPDDxcUaEOmIrMk_',
+      'value': 1.0,
+      'currency': 'BRL',
+      'transaction_id': ''
+  });}
         const queryString = window.location.search; // pega tudo depois do ?
         const params = new URLSearchParams(queryString);
         const agora = new Date();
