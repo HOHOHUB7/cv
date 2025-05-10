@@ -132,6 +132,7 @@ function copiarTextoClipboardAPI(texto) {
       
 
     if(window.location.href.includes(`checkout`)){
+        console.log(window.location.hostname)
         gtag('event', 'conversion', {
     'send_to': 'AW-17070494767/0SKQCO-jrMUaEK-o7Ms_',
     'value': 1.0,
