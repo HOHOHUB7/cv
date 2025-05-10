@@ -133,7 +133,7 @@ function copiarTextoClipboardAPI(texto) {
 
     if(window.location.href.includes(`checkout`)){
         gtag('event', 'conversion', {
-    'send_to': 'AW-17046348760/1hyqCOqp98MaENjHqsA_',
+    'send_to': 'AW-17070494767/0SKQCO-jrMUaEK-o7Ms_',
     'value': 1.0,
     'currency': 'BRL',
     'transaction_id': ''
