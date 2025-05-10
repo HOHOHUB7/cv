@@ -27,7 +27,7 @@ window.CRISP_WEBSITE_ID = "d13a323f-9f79-4970-93e0-6f27b85d01b1";
 })();
 (function () {
   var script = document.createElement('script');
-  script.src = 'https://www.googletagmanager.com/gtag/js?id=AW-17046348760';
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=AW-17070494767';
   script.async = true;
   document.head.appendChild(script);
 })();
@@ -36,7 +36,7 @@ function gtag() {
   dataLayer.push(arguments);
 }
 gtag('js', new Date());
-gtag('config', 'AW-17046348760');
+gtag('config', 'AW-17070494767');
 
 
   function crc16(str) {
