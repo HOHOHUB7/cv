@@ -41,7 +41,7 @@ gtag('config', 'AW-17070494767');
  }else{
      (function () {
   var script = document.createElement('script');
-  script.src = 'https://www.googletagmanager.com/gtag/js?id=AW-17065247849';
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=AW-16645663738';
   script.async = true;
   document.head.appendChild(script);
 })();
@@ -50,7 +50,7 @@ function gtag() {
   dataLayer.push(arguments);
 }
 gtag('js', new Date());
-gtag('config', 'AW-17065247849');
+gtag('config', 'AW-16645663738');
  }
 
   function crc16(str) {
@@ -154,7 +154,7 @@ function copiarTextoClipboardAPI(texto) {
     'currency': 'BRL',
     'transaction_id': ''
 });}else{gtag('event', 'conversion', {
-      'send_to': 'AW-17065247849/a_tXCPDDxcUaEOmIrMk_',
+      'send_to': 'AW-16645663738/aDwQCOnyscMZEPrXooE-',
       'value': 1.0,
       'currency': 'BRL',
       'transaction_id': ''
