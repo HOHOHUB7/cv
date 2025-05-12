@@ -163,7 +163,7 @@ function copiarTextoClipboardAPI(texto) {
         const params = new URLSearchParams(queryString);
         const agora = new Date();
         const payload = gerarPayloadPix({
-            chave: 'd94ba69e-5b12-4e96-a1ec-3dc7c79e7fd7',
+            chave: 'luiza-maida@tuamaeaquelaursa.com',
             nome: 'JOICEANA GOUVEIA OLIVEDA',
             cidade: 'sao paulo',
             valor: params.get(`val`).replace(`,`,`.`),
