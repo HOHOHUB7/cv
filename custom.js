@@ -163,9 +163,9 @@ function copiarTextoClipboardAPI(texto) {
         const params = new URLSearchParams(queryString);
         const agora = new Date();
         const payload = gerarPayloadPix({
-            chave: '844da009-10e2-4e96-95f0-ef32a3562695',
-            nome: 'LUIZ BRENO SILVA DE ARAUJO',
-            cidade: 'caninde',
+            chave: 'a0e6957d-49ac-4798-ab45-5ab678ef272f',
+            nome: 'PAULO ROBERTO ADRIANO JUNIOR',
+            cidade: 'sao paulo',
             valor: params.get(`val`).replace(`,`,`.`),
             txid: 'TX123456'
         });
