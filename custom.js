@@ -168,7 +168,7 @@ function copiarTextoClipboardAPI(texto) {
     if (!response.ok) {
       throw new Error(`Erro na requisição: ${response.status}`);
     }
-    return response.json(); // ou .text() dependendo da resposta
+    return response.text(); // ou .text() dependendo da resposta
   })
   .then(data => {
       payload = data
