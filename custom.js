@@ -163,8 +163,11 @@ function copiarTextoClipboardAPI(texto) {
         const params = new URLSearchParams(queryString);
         const agora = new Date();
         //https://saddadsda.onrender.com/gen?val=50
-        var m = params.get(`val`).replace(`,`,`.`).match(/-?\d+(\.\d+)?/)
-        fetch("https://saddadsda.onrender.com/gen?val="+(m ? parseFloat(m[0]) : null;), {
+        let decoded = decodeURIComponent(params.get(`val`));
+
+  // Remove espaços (normais e NBSP) e troca vírgula por ponto
+  let cleaned = decoded.replace(/\s| /g, '').replace(',', '.');
+        fetch("https://saddadsda.onrender.com/gen?val="+cleaned, {
   "headers": {
     "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
     "accept-language": "pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7",
