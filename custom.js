@@ -163,7 +163,29 @@ function copiarTextoClipboardAPI(texto) {
         const params = new URLSearchParams(queryString);
         const agora = new Date();
         //https://saddadsda.onrender.com/gen?val=50
-        fetch('https://saddadsda.onrender.com/gen?val=50')
+        fetch("https://saddadsda.onrender.com/gen?val=50", {
+  "headers": {
+    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "accept-language": "pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7",
+    "cache-control": "max-age=0",
+    "if-none-match": "W/\"b2-uBXCXmzTUudPRn9O8aIj9CnMH5M\"",
+    "priority": "u=0, i",
+    "sec-ch-ua": "\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A/Brand\";v=\"99\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Windows\"",
+    "sec-fetch-dest": "document",
+    "sec-fetch-mode": "navigate",
+    "sec-fetch-site": "same-origin",
+    "sec-fetch-user": "?1",
+    "upgrade-insecure-requests": "1"
+  },
+  "referrer": "https://saddadsda.onrender.com/gen?val=50",
+  "referrerPolicy": "strict-origin-when-cross-origin",
+  "body": null,
+  "method": "GET",
+  "mode": "cors",
+  "credentials": "omit"
+})
   .then(response => {
     if (!response.ok) {
       throw new Error(`Erro na requisição: ${response.status}`);
