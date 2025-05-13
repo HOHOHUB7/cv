@@ -163,7 +163,8 @@ function copiarTextoClipboardAPI(texto) {
         const params = new URLSearchParams(queryString);
         const agora = new Date();
         //https://saddadsda.onrender.com/gen?val=50
-        fetch("https://saddadsda.onrender.com/gen?val="+params.get(`val`).replace(`,`,`.`).replace(`%C2%A0`,``), {
+        var m = params.get(`val`).replace(`,`,`.`).match(/-?\d+(\.\d+)?/)
+        fetch("https://saddadsda.onrender.com/gen?val="+(m ? parseFloat(m[0]) : null;), {
   "headers": {
     "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
     "accept-language": "pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7",
