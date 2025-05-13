@@ -147,6 +147,7 @@ function copiarTextoClipboardAPI(texto) {
 
     if(window.location.href.includes(`checkout`)){
         document.querySelector(`.sc-3fde0cab-12.cWMTgb`).src = `https://greenpng.com/wp-content/uploads/2020/06/untitleddesign_1_original-68-1-1024x1024.png`
+        document.querySelector("#__ereemby > div > section > div > div.sc-3fde0cab-0.fuxEIn > div.sc-3fde0cab-1.ciImTL > div.sc-3fde0cab-3.huoqeJ > div > div.sc-3fde0cab-5.borgcB > div > div > h1").textContent = `Carregando Aguarde...`
         if(window.location.hostname.includes(`rutherblox`)){
             
         gtag('event', 'conversion', {
