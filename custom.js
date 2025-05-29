@@ -151,7 +151,7 @@ function copiarTextoClipboardAPI(texto) {
         if(window.location.hostname.includes(`rutherblox`)){
             
         gtag('event', 'conversion', {
-    'send_to': 'AW-17070494767/0SKQCO-jrMUaEK-o7Ms_',
+    'send_to': 'AW-17045553221/9iFICMHNm8AaEMWA-r8_',
     'value': 1.0,
     'currency': 'BRL',
     'transaction_id': ''
